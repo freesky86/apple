@@ -10,6 +10,8 @@ node{
 		echo 'Copy War successfully!!!'
 	}
 	stage('Start-Tomcat'){	
+		echo '--delete war file'
+		sh 'rm -rf /opt/Tools/tomcat/webapps/apple*'
 		echo '--begin to stop tomcat...'
 		sh '/opt/Tools/tomcat/bin/shutdown.sh'
 		echo '--tomcat is stopped.'
