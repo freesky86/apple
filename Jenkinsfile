@@ -13,9 +13,10 @@ node{
 		echo 'Copy War successfully!!!'
 	}
 	stage('Start-Tomcat'){	
-		echo '--begin to stop tomcat...'
-		sh '/opt/Tools/tomcat/bin/shutdown.sh'
-		echo '--tomcat is stopped.'
+		//echo '--begin to stop tomcat...'
+		//sh '/opt/Tools/tomcat/bin/shutdown.sh'
+		//echo '--tomcat is stopped.'
+		echo '--begin to start tomcat...'
 		sh '/opt/Tools/tomcat/bin/startup.sh'
 		echo '--tomcat is started.'
 	}
