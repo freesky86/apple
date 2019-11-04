@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-This is a JSP file.
+<p>This is a JSP file.</p>
 --test Jenkins.
 another.
 </body>
