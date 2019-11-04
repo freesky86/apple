@@ -8,7 +8,7 @@
 </head>
 <body>
 <p>This is a JSP file.</p>
---test Jenkins.
+--test Jenkins. <br />
 another.
 </body>
 </html>
