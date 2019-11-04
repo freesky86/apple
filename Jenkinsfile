@@ -6,7 +6,7 @@ node{
 	        sh 'mvn package'
       	}
 	stage('Deploy-war'){
-		sh 'cp /root/.jenkins/workspace/maven-project/target/apple-0.0.1-SNAPSHOT.war /opt/Tools/tomcat/webapps'	
+		//sh 'cp /root/.jenkins/workspace/maven-project/target/apple-0.0.1-SNAPSHOT.war /opt/Tools/tomcat/webapps'	
 	}
 	stage('Start-Tomcat'){
 		sh /opt/Tools/tomcat/bin/shutdown.sh
