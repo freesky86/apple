@@ -10,6 +10,9 @@ node{
 		echo 'Copy War successfully!!!'
 	}
 	stage('Start-Tomcat'){
+		echo '--begin to import jenkins.'
+		import jenkins.model.*
+		jenkins = Jenkins.instance
 		echo '--begin to stop tomcat...'
 		sh /opt/Tools/tomcat/bin/shutdown.sh
 		echo '--tomcat is stopped.'
