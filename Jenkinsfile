@@ -1,8 +1,16 @@
 node{
-      stage('SCM Checkout'){
+      	stage('SCM Checkout'){
 	        git 'https://github.com/freesky86/apple'
-      }
-      stage('Compile-Package'){
+      	}
+     	 stage('Compile-Package'){
 	        sh 'mvn package'
-      }
+      	}
+	stage('Deploy-war'){
+		//sh 'cp /root/.jenkins/workspace/maven-project/target/apple-0.0.1-SNAPSHOT.war /opt/Tools/tomcat/webapps'
+		echo 'good job!!!'
+	}
+	stage('Start-Tomcat'){
+		sh /opt/Tools/tomcat/bin/shutdown.sh
+		sh /opt/Tools/tomcat/bin/startup.sh
+	}
 }
