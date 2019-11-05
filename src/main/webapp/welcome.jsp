@@ -1,15 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Welcome Here</title>
 </head>
 <body>
-    <p>This is a JSP file.</p>
-    123--test Jenkins. <br />
-    <div>another.</div>
-    <h3>this is title</h3>
+Welcome ${person.name}
 </body>
 </html>
