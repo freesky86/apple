@@ -2,7 +2,7 @@ package com.freesky.entity;
 
 public class Person {
 
-	private String name = "Max Zhang";
+	private String name = "Bill Gates";
 
 	public String getName() {
 		return name;
