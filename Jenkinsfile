@@ -9,7 +9,7 @@ node{
 		echo '--delete war file'
 		sh 'rm -rf /opt/Tools/tomcat/webapps/apple*'
 		echo '--begin copy war...'
-		sh 'cp /root/.jenkins/workspace/maven-project/target/apple.war /opt/Tools/tomcat/webapps/apple.war'
+		sh 'cp /root/.jenkins/workspace/Git-Development/target/apple.war /opt/Tools/tomcat/webapps/apple.war'
 		echo 'Copy War successfully!!!'
 	}
 	stage('Start-Tomcat'){	
