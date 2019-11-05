@@ -9,7 +9,7 @@
 <body>
 <p>This is a JSP file.</p>
 --test Jenkins. <br />
-    <div>master branch</div>
+    <div>master branch with servlet.</div>
     <h3>this is title</h3>
 </body>
 </html>
