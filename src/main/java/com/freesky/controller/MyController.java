@@ -13,7 +13,7 @@ import com.freesky.entity.Person;
 public class MyController extends HttpServlet {
 
 	/**
-	 * 
+	 * serialVersionUID
 	 */
 	private static final long serialVersionUID = -5877766428484572751L;
 	
