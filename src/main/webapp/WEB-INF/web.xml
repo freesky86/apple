@@ -24,4 +24,22 @@
 		<welcome-file>default.htm</welcome-file>
 		<welcome-file>default.jsp</welcome-file>
 	</welcome-file-list>
+	
+	<resource-ref>
+        <res-ref-name>jdbc/mysql</res-ref-name>
+        <res-type>javax.sql.DataSource</res-type>
+        <res-auth>Container</res-auth>
+    </resource-ref>
+    
+    <resource-env-ref>
+	  <description>
+	    Object factory for MyBean instances.
+	  </description>
+	  <resource-env-ref-name>
+	    bean/MyBeanFactory
+	  </resource-env-ref-name>
+	  <resource-env-ref-type>
+	    com.freesky.bean.MyBean
+	  </resource-env-ref-type>
+	</resource-env-ref>
 </web-app>

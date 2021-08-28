@@ -1,0 +1,15 @@
+<!-- Tomcat context.xml -->
+<Context>
+
+    <Resource name="jdbc/mysql" 
+              type="javax.sql.DataSource" driverClassName="com.mysql.cj.jdbc.Driver"
+              url="jdbc:mysql://localhost:3306/demo"
+              username="root" password="dev1234567890" maxTotal="20" maxIdle="10"
+              maxWaitMillis="-1"/>
+
+	<Resource name="bean/MyBeanFactory" 
+            type="com.freesky.bean.MyBean"
+            factory="org.apache.naming.factory.BeanFactory"
+            bar="23" foo="Mark" />
+            
+</Context>
